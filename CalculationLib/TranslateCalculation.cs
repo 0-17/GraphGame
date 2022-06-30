@@ -41,6 +41,15 @@ namespace CalculationLib
                     closed.Add(i);
                 }
             }
+
+            if (closed[0] <= open[0])
+            {
+                return 
+            }
+            for (int i = 0; i < open.Length(); i++)
+            {
+                
+            }
             
         }      
     }

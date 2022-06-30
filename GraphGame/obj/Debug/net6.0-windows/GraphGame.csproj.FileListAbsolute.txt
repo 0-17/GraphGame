@@ -1,0 +1,5 @@
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.csproj.AssemblyReference.cache
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.AssemblyInfoInputs.cache
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.AssemblyInfo.cs
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.csproj.CoreCompileInputs.cache

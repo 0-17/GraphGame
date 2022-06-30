@@ -36,4 +36,5 @@ partial class Form1
     }
 
     #endregion
+    private System.Windows.Forms.PictureBox pictureBox;
 }
