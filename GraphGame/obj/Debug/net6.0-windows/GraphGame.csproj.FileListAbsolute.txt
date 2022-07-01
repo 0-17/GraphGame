@@ -3,3 +3,16 @@ C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphG
 C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.AssemblyInfoInputs.cache
 C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.AssemblyInfo.cs
 C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.csproj.CoreCompileInputs.cache
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\GraphGame.exe
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\GraphGame.deps.json
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\GraphGame.runtimeconfig.json
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\GraphGame.dll
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\GraphGame.pdb
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\CalculationLib.dll
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\bin\Debug\net6.0-windows\CalculationLib.pdb
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.csproj.CopyComplete
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.dll
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\refint\GraphGame.dll
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.pdb
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\GraphGame.genruntimeconfig.cache
+C:\Users\niijw\RiderProjects\GraphGame\GraphGame\obj\Debug\net6.0-windows\ref\GraphGame.dll

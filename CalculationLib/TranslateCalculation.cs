@@ -1,57 +1,78 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Xml.Schema;
 
 namespace CalculationLib
 {
     public static class TranslateCalculation
     {
-        private static double stringToCalc(string str, double x)
+        public static string[] seperateBrackets(string term)
         {
-            string cHandledString = "";
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (str[i] == '(')
-                {
-                    for (int j = i; j < str.Length; j++)
-                    {
-                        if (str[j] != ')')
-                        {
-                            cHandledString += str[j];
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-                }
-            }
+            var result = term.Split().Where(x => x.StartsWith("(") && x.EndsWith(")")).ToList();
+            return result.ToArray();
         }
 
-        private static string[] seperateBrackets(string term)
+        public static List<TempBracketHelper> seperateBracketsWell(string term)
         {
-            List<int> open = new List<int>();
-            List<int> closed = new List<int>();
+            term = Regex.Replace(term, @"\s+", "");
+            List<TempBracketHelper> br = new List<TempBracketHelper>();
+            int onum = 0;
+            int cnum = 0;
             for (int i = 0; i < term.Length; i++)
             {
                 if (term[i] == '(')
                 {
-                    open.Add(i);
-                }
-                else if (term[i] == ')')
-                {
-                    closed.Add(i);
+                    for (int j = i+1; j < term.Length; j++)
+                    {
+                        if (term[j] == '(')
+                        {
+                            onum += 1;
+                        }
+                        else if (term[j] == ')')
+                        {
+                            cnum += 1;
+                            if (cnum > onum)
+                            {
+                                TempBracketHelper tempbr = new TempBracketHelper();
+                                tempbr.Open = i;
+                                tempbr.Closed = j;
+                                br.Add(tempbr);
+                                onum = 0;
+                                cnum = 0;
+                                break;
+                            }
+                        }
+                    }
                 }
             }
 
-            if (closed[0] <= open[0])
+            foreach (var item in br)
             {
-                return 
+                item.Eq = (term.Substring(item.Open+1, (item.Closed-item.Open)));
             }
-            for (int i = 0; i < open.Length(); i++)
+
+            return br;
+        }
+
+        public static double SolveFinal(string term)
+        {
+            Evaluation eval = new Evaluation();
+            term = Regex.Replace(term, @"\s+", "");
+            var sepBr = seperateBracketsWell(term);
+            foreach (var item in sepBr)
             {
-                
+                eval.Parse(item.Eq);
+                double result = eval.Solve();
+                term.Remove(item.Open, item.Closed + 1);
+                term.Insert(item.Open, result.ToString());
             }
-            
-        }      
+            eval.Parse(term);
+            double fresult = eval.Solve();
+            return fresult;
+        }
+        
     }
-    
 }

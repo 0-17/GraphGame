@@ -39,6 +39,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="EquationParser.cs" />
+        <Compile Include="Evaluation.cs" />
+        <Compile Include="TempBracketHelper.cs" />
         <Compile Include="TranslateCalculation.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
