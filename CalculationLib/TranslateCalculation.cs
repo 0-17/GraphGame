@@ -51,7 +51,7 @@ namespace CalculationLib
 
             foreach (var item in br)
             {
-                item.Eq = (term.Substring(item.Open+1, (item.Closed-item.Open)));
+                item.Eq = (term.Substring(item.Open+1, (item.Closed-item.Open-1)));
             }
 
             return br;
@@ -62,12 +62,15 @@ namespace CalculationLib
             Evaluation eval = new Evaluation();
             term = Regex.Replace(term, @"\s+", "");
             var sepBr = seperateBracketsWell(term);
+            int lessened = 0;
             foreach (var item in sepBr)
             {
                 eval.Parse(item.Eq);
                 double result = eval.Solve();
-                term.Remove(item.Open, item.Closed + 1);
+                term.Remove(item.Open+1 - lessened, item.Closed - lessened);
                 term.Insert(item.Open, result.ToString());
+                lessened += item.Eq.Length + 2;
+                lessened -= result.ToString().Length;
             }
             eval.Parse(term);
             double fresult = eval.Solve();

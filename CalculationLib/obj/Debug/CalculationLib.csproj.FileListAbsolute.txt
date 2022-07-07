@@ -1,0 +1,6 @@
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\bin\Debug\CalculationLib.dll
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\bin\Debug\CalculationLib.pdb
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\obj\Debug\CalculationLib.csproj.AssemblyReference.cache
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\obj\Debug\CalculationLib.csproj.CoreCompileInputs.cache
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\obj\Debug\CalculationLib.dll
+C:\Users\niijw\RiderProjects\GraphGame\CalculationLib\obj\Debug\CalculationLib.pdb

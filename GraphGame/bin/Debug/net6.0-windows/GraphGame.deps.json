@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GraphGame/1.0.0": {
+        "dependencies": {
+          "CalculationLib": "1.0.0"
+        },
+        "runtime": {
+          "GraphGame.dll": {}
+        }
+      },
+      "CalculationLib/1.0.0": {
+        "runtime": {
+          "CalculationLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculationLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
