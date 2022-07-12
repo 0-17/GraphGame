@@ -40,6 +40,7 @@ public class Evaluation
             result = double.Parse(equation);
         }
     }
+    
 
     private double result;
 

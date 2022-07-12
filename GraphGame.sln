@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationLib", "Calculati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asd", "asd\asd.csproj", "{84A4FF05-F0EC-4AAE-B8C1-9936DB272439}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLib", "GameLib\GameLib.csproj", "{A47E61D4-FFC1-4FA7-A7AF-2A2AFA501DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{84A4FF05-F0EC-4AAE-B8C1-9936DB272439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84A4FF05-F0EC-4AAE-B8C1-9936DB272439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84A4FF05-F0EC-4AAE-B8C1-9936DB272439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47E61D4-FFC1-4FA7-A7AF-2A2AFA501DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47E61D4-FFC1-4FA7-A7AF-2A2AFA501DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47E61D4-FFC1-4FA7-A7AF-2A2AFA501DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47E61D4-FFC1-4FA7-A7AF-2A2AFA501DB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
